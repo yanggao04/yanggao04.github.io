@@ -1,7 +1,7 @@
 /* Shared content. Edit data here. */
 const PROFILE = {
   name: "Yang Gao",
-  role: "PhD student \u00B7 Computational Science &amp; Engineering @ Georgia Tech",
+  role: "PhD \u00B7 Computational Science &amp; Engineering @ Georgia Tech",
   email: ["ygao492@gatech.edu", "yang.gao61@outlook.com"],
   github: "https://github.com/yanggao04",
   links: [
@@ -20,7 +20,7 @@ const EDUCATION = [
   { title: "PhD, Computational Science and Engineering", org: "Georgia Institute of Technology",
     date: "Aug 2026 \u2013 Present", tag: "Advised by Sriram Vishwanath" },
   { title: "MSc, Mathematics and Computer Science", org: "University of Oxford",
-    date: "Oct 2022 \u2013 Jul 2026", tag: "First Class Degree" },
+    date: "Oct 2022 \u2013 Jul 2026", tag: null },
 ];
 
 const EXPERIENCE = [
@@ -69,6 +69,16 @@ const PROJECTS = [
     ] },
 ];
 
+const AWARDS = [
+  { title: "President Fellowship", org: "Georgia Institute of Technology", date: "2026" },
+  { title: "Otto F. and Jenny H. Krauss Fellowship", org: "Georgia Institute of Technology", date: "2026" },
+  { title: "Mary Somerville Prize", org: "Somerville College, University of Oxford", date: "2026" },
+  { title: "Distinction in Master", org: "University of Oxford", date: "2026" },
+  { title: "First Class Degree in Part A/B", org: "University of Oxford", date: "2025" },
+  { title: "Department of Computer Science Group Project Prize", org: "University of Oxford", date: "2024" },
+  { title: "Distinction in Prelims", org: "University of Oxford", date: "2023" },
+];
+
 const PUBLICATIONS = [
   { authors: "Y. Gao", title: "Model Checking PATL under Imperfect Information",
     source: "Master Thesis", year: "2026", url: null },
@@ -76,3 +86,18 @@ const PUBLICATIONS = [
 
 /* Optional: papers on home page. Defaults to PUBLICATIONS. */
 const HOME_PUBLICATIONS = PUBLICATIONS;
+
+/* Brief education lines shown on home (title = degree+major, org = school). */
+const HOME_EDUCATION = [
+  { title: "PhD, Computational Science and Engineering", org: "Georgia Institute of Technology" },
+  { title: "MSc, Mathematics and Computer Science", org: "University of Oxford" },
+];
+
+/* Home shows all awards (full list). */
+/* Home awards: first 4, with the master honor renamed. */
+const HOME_AWARDS = [
+  { title: "President Fellowship", org: "Georgia Institute of Technology", date: "2026" },
+  { title: "Otto F. and Jenny H. Krauss Fellowship", org: "Georgia Institute of Technology", date: "2026" },
+  { title: "Mary Somerville Prize", org: "Somerville College, University of Oxford", date: "2026" },
+  { title: "First Class Degree", org: "University of Oxford", date: "2026" },
+];

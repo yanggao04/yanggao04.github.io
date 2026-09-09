@@ -28,3 +28,11 @@ function paperList(list) {
     `<span class="ptitle">&ldquo;${esc(p.title)}&rdquo;</span>, ` +
     `<strong>${esc(p.source)}</strong>, ${p.year}.</div>`).join("");
 }
+
+/* Compact single-line awards list. */
+function awardList(list) {
+  return `<ul class="awards">` + list.map((a) =>
+    `<li><span class="aw-name">${esc(a.title)}</span>` +
+    `<span class="aw-mid">${a.org ? `&middot; ${esc(a.org)}` : ""}</span>` +
+    `<span class="aw-date">${esc(a.date)}</span></li>`).join("") + `</ul>`;
+}
