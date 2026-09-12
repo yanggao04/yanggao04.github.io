@@ -4,6 +4,7 @@ const PROFILE = {
   role: "PhD \u00B7 Computational Science &amp; Engineering @ Georgia Tech",
   email: ["ygao492@gatech.edu", "yang.gao61@outlook.com"],
   github: "https://github.com/yanggao04",
+  linkedin: "https://www.linkedin.com/in/yang-gao-40573a159/",
   links: [],
 };
 
