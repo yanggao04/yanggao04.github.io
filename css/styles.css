@@ -19,6 +19,14 @@ nav.links a:hover { color: var(--accent); }
 nav.links a.active { color: var(--accent); border-color: var(--accent); }
 
 h1 { font-size: 40px; line-height: 1.15; margin: 30px 0 6px; letter-spacing: -.5px; }
+
+/* Home hero with avatar */
+.hero { display: flex; align-items: center; gap: 24px; margin: 30px 0 8px; }
+.hero-text h1 { margin: 0 0 6px; }
+.avatar {
+  width: 168px; height: 168px; border-radius: 16px; object-fit: cover;
+  flex-shrink: 0; border: 1px solid var(--line);
+}
 .role { color: var(--muted); font-size: 17px; margin: 0 0 12px; }
 .metabar { display: flex; gap: 6px 18px; flex-wrap: wrap; font-size: 15px; margin-bottom: 8px; }
 .metabar a, .page a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
@@ -64,7 +72,12 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 }
 .print-fab:hover { background: #1d4ed8; }
 
-@media (max-width: 560px) { #app { padding: 24px 18px 60px; } h1 { font-size: 32px; } }
+@media (max-width: 560px) {
+  #app { padding: 24px 18px 60px; }
+  h1 { font-size: 32px; }
+  .hero { gap: 16px; }
+  .avatar { width: 112px; height: 112px; }
+}
 
 @media print {
   @page { margin: 16mm 14mm; }

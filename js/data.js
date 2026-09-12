@@ -4,21 +4,21 @@ const PROFILE = {
   role: "PhD \u00B7 Computational Science &amp; Engineering @ Georgia Tech",
   email: ["ygao492@gatech.edu", "yang.gao61@outlook.com"],
   github: "https://github.com/yanggao04",
-  links: [
-    { label: "Advisor: S. Vishwanath", url: "https://ece.gatech.edu/directory/sriram-vishwanath" },
-  ],
+  links: [],
 };
 
 const ABOUT = [
   "I'm a PhD student in the School of Electrical and Computer Engineering at Georgia Tech, advised by " +
-    "Prof. Sriram Vishwanath. My work centers on AI with verification and high-performance computing, and on decentralized AI.",
+    "Prof. <a href=\"https://ece.gatech.edu/directory/sriram-vishwanath\" target=\"_blank\" rel=\"noopener\">Sriram Vishwanath</a>. " +
+    "My work centers on AI with verification and high-performance computing, and on decentralized AI.",
   "I earned master's and bachelor's degrees from the University of Oxford, majoring in mathematics and " +
     "computer science, with a focus on the intersection of concurrency, formal methods, and game theory, as well as collective decision making.",
 ];
 
 const EDUCATION = [
   { title: "PhD, Computational Science and Engineering", org: "Georgia Institute of Technology",
-    date: "Aug 2026 \u2013 Present", tag: "Advised by Sriram Vishwanath" },
+    date: "Aug 2026 \u2013 Present",
+    tag: "Advised by <a href=\"https://ece.gatech.edu/directory/sriram-vishwanath\" target=\"_blank\" rel=\"noopener\">Sriram Vishwanath</a>" },
   { title: "MSc, Mathematics and Computer Science", org: "University of Oxford",
     date: "Oct 2022 \u2013 Jul 2026", tag: null },
 ];

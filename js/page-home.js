@@ -5,9 +5,14 @@ PAGES.home = {
   label: "Home",
   render() {
     let out =
-      `<h1>${PROFILE.name}</h1>` +
-      `<p class="role">${PROFILE.role}</p>` +
-      metaLinks();
+      `<div class="hero">` +
+        `<img class="avatar" src="assets/profile-pic.JPG" alt="${PROFILE.name}" />` +
+        `<div class="hero-text">` +
+          `<h1>${PROFILE.name}</h1>` +
+          `<p class="role">${PROFILE.role}</p>` +
+          metaLinks() +
+        `</div>` +
+      `</div>`;
 
     out += `<h2>About</h2>`;
     out += ABOUT.map((p) => `<p class="page-p">${p}</p>`).join("");
