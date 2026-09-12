@@ -32,6 +32,13 @@ const EXPERIENCE = [
 ];
 
 const PROJECTS = [
+  { title: "Masked Language Modeling and Investigation of FactorGraph Transformer Architecture",
+    date: "May 2026 \u2013 Present", url: null,
+    desc: [
+      "Understand the basic architecture and codebase of a new transformer architecture: FactorGraph Transformer (FGT);",
+      "Build an MLM training schema and carry out pretraining for FGT and a vanilla transformer to compare performance and utility;",
+      "Analyze training outcomes and give constructive suggestions.",
+    ] },
   { title: "Model Checking Multi-Agent Stochastic Games with Imperfect Information",
     date: "Feb 2025 \u2013 Apr 2026", url: null,
     desc: [

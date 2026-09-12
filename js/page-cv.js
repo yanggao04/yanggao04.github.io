@@ -4,7 +4,7 @@ window.PAGES = window.PAGES || {};
 PAGES.cv = {
   label: "CV",
   render() {
-    let out = `<h1>Curriculum Vitae</h1>` + metaLinks();
+    let out = `<h1>${PROFILE.name} \u2014 CV</h1>` + metaLinks();
     out += `<button class="print-fab" type="button" onclick="window.print()" title="Print / Save as PDF">Print</button>`;
 
     out += `<h2>Education</h2>`;
