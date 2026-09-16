@@ -78,7 +78,7 @@ const PROJECTS = [
 ];
 
 const AWARDS = [
-  { title: "President Fellowship", org: "Georgia Institute of Technology", date: "2026" },
+  { title: "President's Fellowship", org: "Georgia Institute of Technology", date: "2026" },
   { title: "Otto F. and Jenny H. Krauss Fellowship", org: "Georgia Institute of Technology", date: "2026" },
   { title: "Mary Somerville Prize", org: "Somerville College, University of Oxford", date: "2026" },
   { title: "Distinction in Master", org: "University of Oxford", date: "2026" },
@@ -104,7 +104,7 @@ const HOME_EDUCATION = [
 /* Home shows all awards (full list). */
 /* Home awards: first 4, with the master honor renamed. */
 const HOME_AWARDS = [
-  { title: "President Fellowship", org: "Georgia Institute of Technology", date: "2026" },
+  { title: "President's Fellowship", org: "Georgia Institute of Technology", date: "2026" },
   { title: "Otto F. and Jenny H. Krauss Fellowship", org: "Georgia Institute of Technology", date: "2026" },
   { title: "Mary Somerville Prize", org: "Somerville College, University of Oxford", date: "2026" },
   { title: "First Class Degree", org: "University of Oxford", date: "2026" },
