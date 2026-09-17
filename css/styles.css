@@ -37,6 +37,10 @@ h1 { font-size: 40px; line-height: 1.15; margin: 30px 0 6px; letter-spacing: -.5
 .social a:hover { color: var(--accent); }
 .social svg { width: 20px; height: 20px; display: block; }
 
+.contact-icons { margin-top: 18px; }
+.contact-icons .social { gap: 20px; }
+.contact-icons .social svg { width: 28px; height: 28px; }
+
 h2 { font-size: 20px; letter-spacing: -.2px; margin: 40px 0 16px; padding-bottom: 8px;
   border-bottom: 1px solid var(--line); }
 .page-p { margin: 0 0 12px; }
