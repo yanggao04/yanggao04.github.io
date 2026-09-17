@@ -1,6 +1,6 @@
 /* Router + render. Loaded last, after pages register into window.PAGES. */
 
-const NAV = ["home", "cv", "contact"];
+const NAV = ["home", "research", "cv", "contact"];
 
 function renderNav(activeKey) {
   const nav = document.getElementById("nav");

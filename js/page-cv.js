@@ -4,7 +4,7 @@ window.PAGES = window.PAGES || {};
 PAGES.cv = {
   label: "CV",
   render() {
-    let out = `<h1>${PROFILE.name} \u2014 CV</h1>` + metaLinks();
+    let out = `<h1>${PROFILE.name}</h1>` + metaLinks();
     out += `<button class="print-fab" type="button" onclick="window.print()" title="Print / Save as PDF">Print</button>`;
 
     out += `<h2>Education</h2>`;
@@ -21,9 +21,6 @@ PAGES.cv = {
     out += PROJECTS.map((p) =>
       `<div class="entry">${entryHead(p.title, p.date, p.url)}` +
       `${p.desc ? bullets(p.desc) : ""}</div>`).join("");
-
-    out += `<h2>Publications</h2>`;
-    out += paperList(PUBLICATIONS);
 
     out += `<h2>Awards</h2>`;
     out += awardList(AWARDS);

@@ -32,6 +32,11 @@ h1 { font-size: 40px; line-height: 1.15; margin: 30px 0 6px; letter-spacing: -.5
 .metabar a, .page a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
 .metabar a:hover, .page a:hover { border-color: var(--accent); }
 
+.social { display: flex; gap: 14px; margin-top: 10px; }
+.social a { color: var(--muted); transition: color .15s; display: inline-flex; }
+.social a:hover { color: var(--accent); }
+.social svg { width: 20px; height: 20px; display: block; }
+
 h2 { font-size: 20px; letter-spacing: -.2px; margin: 40px 0 16px; padding-bottom: 8px;
   border-bottom: 1px solid var(--line); }
 .page-p { margin: 0 0 12px; }
@@ -59,6 +64,18 @@ ul.awards li:last-child { border-bottom: none; }
 .paper { margin-bottom: 14px; }
 .paper .authors { font-weight: 600; }
 .paper .ptitle { font-style: italic; }
+
+/* Research page */
+.research-intro { margin-bottom: 34px; }
+.research-item { margin-bottom: 52px; }
+.research-item .research-title { margin-top: 0; }
+.research-meta { color: var(--muted); font-size: 14px; margin: -8px 0 14px; }
+.figgrid { display: grid; grid-template-columns: 1fr; gap: 22px; margin-top: 20px; justify-items: center; }
+.fig { margin: 26px auto; width: 100%; text-align: center; }
+.fig img { display: block; margin: 0 auto; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.fig figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+.fig.small img { max-width: 33%; }
+.fig.medium img { max-width: 62%; }
 
 footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
   color: var(--muted); font-size: 13px; }
