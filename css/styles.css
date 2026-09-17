@@ -44,6 +44,7 @@ h1 { font-size: 40px; line-height: 1.15; margin: 30px 0 6px; letter-spacing: -.5
 h2 { font-size: 20px; letter-spacing: -.2px; margin: 40px 0 16px; padding-bottom: 8px;
   border-bottom: 1px solid var(--line); }
 .page-p { margin: 0 0 12px; }
+.page-p.lead { margin-top: 18px; }
 
 .entry { margin-bottom: 22px; }
 .entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
@@ -70,7 +71,7 @@ ul.awards li:last-child { border-bottom: none; }
 .paper .ptitle { font-style: italic; }
 
 /* Research page */
-.research-intro { margin-bottom: 34px; }
+.research-intro { margin-top: 18px; margin-bottom: 34px; }
 .research-item { margin-bottom: 52px; }
 .research-item .research-title { margin-top: 0; }
 .research-meta { color: var(--muted); font-size: 14px; margin: -8px 0 14px; }

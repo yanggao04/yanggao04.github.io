@@ -4,7 +4,7 @@ window.PAGES = window.PAGES || {};
 PAGES.research = {
   label: "Research",
   render() {
-    let out = `<h1>Research</h1>`;
+    let out = ``;
     if (typeof RESEARCH_INTRO !== "undefined" && RESEARCH_INTRO) {
       out += `<p class="page-p research-intro">${RESEARCH_INTRO}</p>`;
     }
