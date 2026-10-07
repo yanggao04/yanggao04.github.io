@@ -11,7 +11,7 @@ const PROFILE = {
 const ABOUT = [
   "I'm a PhD student in the School of Electrical and Computer Engineering at Georgia Tech, advised by " +
     "Prof. <a href=\"https://ece.gatech.edu/directory/sriram-vishwanath\" target=\"_blank\" rel=\"noopener\">Sriram Vishwanath</a>. " +
-    "My work centers on AI with verification and high-performance computing, and on decentralized and parallel machine learning.",
+    "My research centers on machine learning with verification and parallel computing, as well as agent systems and harness.",
   "I earned master's and bachelor's degrees from the University of Oxford, majoring in mathematics and " +
     "computer science, with a focus on the intersection of concurrency, formal methods, and game theory, as well as collective decision making.",
 ];
