@@ -104,16 +104,28 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 }
 .print-fab:hover { background: #1d4ed8; }
 
+/* CV language toggle (CV page only) */
+.cv-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.lang-btn {
+  flex-shrink: 0; margin-top: 38px; font: inherit; font-size: 13px;
+  color: var(--muted); background: transparent; border: 1px solid var(--line);
+  border-radius: 999px; padding: 5px 14px; cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.lang-btn:hover { color: var(--accent); border-color: var(--accent); }
+
 @media (max-width: 560px) {
   #app { padding: 24px 18px 60px; }
   h1 { font-size: 32px; }
   .hero { gap: 16px; }
   .avatar { width: 112px; height: 112px; }
+  .cv-top { flex-direction: column; gap: 0; }
+  .lang-btn { margin-top: 6px; }
 }
 
 @media print {
   @page { margin: 16mm 14mm; }
-  header.nav, #foot, .print-fab { display: none !important; }
+  header.nav, #foot, .print-fab, .lang-btn { display: none !important; }
   body { color: #000; background: #fff; }
   a { color: #000 !important; text-decoration: none !important; }
   #app { max-width: none; padding: 0; }

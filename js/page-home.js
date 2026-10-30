@@ -24,7 +24,7 @@ PAGES.home = {
       `<div class="sub">${e.org}</div></div>`).join("");
 
     out += `<h2>Selected Projects</h2>`;
-    out += PROJECTS.map((p) =>
+    out += PROJECTS.slice(0, 5).map((p) =>
       `<div class="entry">${entryHead(p.title, p.date, p.url)}</div>`).join("");
 
     out += `<h2>Awards</h2>`;

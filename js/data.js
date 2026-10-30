@@ -17,10 +17,10 @@ const ABOUT = [
 ];
 
 const EDUCATION = [
-  { title: "PhD, Computational Science and Engineering", org: "Georgia Institute of Technology",
+  { title: "PhD, Computational Science and Engineering", org: "Georgia Institute of Technology", loc: "Atlanta, GA, USA",
     date: "Aug 2026 \u2013 Present",
     tag: "Advised by <a href=\"https://ece.gatech.edu/directory/sriram-vishwanath\" target=\"_blank\" rel=\"noopener\">Sriram Vishwanath</a>" },
-  { title: "MSc, Mathematics and Computer Science", org: "University of Oxford",
+  { title: "MSc, Mathematics and Computer Science", org: "University of Oxford", loc: "Oxford, England, UK",
     date: "Oct 2022 \u2013 Jul 2026", tag: null },
 ];
 
@@ -33,6 +33,16 @@ const EXPERIENCE = [
 ];
 
 const PROJECTS = [
+  { title: "Improving Model Training and Inference Performance in Heterogeneous and Constrained Setting",
+    date: "Sep 2026 \u2013 Present", url: null, desc: [
+      "Investigate pipeline parallelism and heterogeneous offloading frameworks and analyse performance;",
+      "Design heterogeneous training algorithm and reduce bubbles in pipeline parallelism.",
+    ] },
+  { title: "Verification of Spatiotemporal Composable Harness Systems",
+    date: "Sep 2026 \u2013 Present", url: null, desc: [
+      "Abstract system with spatiotemporal composability and specifications with formal representations and logic;",
+      "Design verification paradigm based on DeepSeek Harness framework.",
+    ] },
   { title: "Masked Language Modeling and Investigation of FactorGraph Transformer Architecture",
     date: "May 2026 \u2013 Present", url: null,
     desc: [
@@ -220,3 +230,78 @@ const HOME_AWARDS = [
   { title: "Mary Somerville Prize", org: "Somerville College, University of Oxford", date: "2026" },
   { title: "First Class Degree", org: "University of Oxford", date: "2026" },
 ];
+
+/* CV page — 中文. Toggle is CV-only; default stays English. */
+const CV_ZH = {
+  headings: { education: "教育背景", experience: "工作经历", projects: "项目", awards: "荣誉与奖项" },
+  education: [
+    { title: "博士，计算科学与工程", org: "佐治亚理工学院", loc: "美国佐治亚州亚特兰大", date: "2026 年 8 月 – 至今",
+      tag: "导师：<a href=\"https://ece.gatech.edu/directory/sriram-vishwanath\" target=\"_blank\" rel=\"noopener\">Sriram Vishwanath</a>" },
+    { title: "硕士，数学与计算机科学", org: "牛津大学", loc: "英格兰牛津", date: "2022 年 10 月 – 2026 年 7 月", tag: null },
+  ],
+  experience: [
+    { title: "研究生科研与教学助理", org: "佐治亚理工学院", date: "2026 年 8 月 – 至今" },
+    { title: "研究实习生", org: "Sunblaze Lab，加州大学伯克利分校", date: "2025 年 5 月 – 2025 年 9 月" },
+    { title: "编程语言实习工程师", org: "华为技术有限公司", date: "2024 年 7 月 – 2024 年 9 月" },
+    { title: "高性能计算实习工程师", org: "国家超级计算深圳中心", date: "2024 年 3 月 – 2024 年 4 月" },
+    { title: "研发实习工程师", org: "DigApis Technologies", date: "2023 年 6 月 – 2023 年 9 月" },
+  ],
+  projects: [
+    { title: "异构与资源受限下的模型训练与推理性能优化", date: "2026 年 9 月 – 至今", url: null,
+      desc: [
+        "研究流水线并行与异构卸载框架，并分析其性能；",
+        "设计异构训练算法，减少流水线并行中的气泡。",
+      ] },
+    { title: "时空可组合 Harness 系统的验证", date: "2026 年 9 月 – 至今", url: null,
+      desc: [
+        "以时空可组合性抽象系统，并用形式化表示与逻辑描述规格；",
+        "基于 DeepSeek Harness 框架设计验证范式。",
+      ] },
+    { title: "掩码语言建模与 FactorGraph Transformer 架构研究", date: "2026 年 5 月 – 至今", url: null,
+      desc: [
+        "理解 FactorGraph Transformer（FGT）这一新型 Transformer 架构的基本结构与代码库；",
+        "搭建 MLM 训练方案，对 FGT 与标准 Transformer 进行预训练，比较性能与实用性；",
+        "分析训练结果并提出改进建议。",
+      ] },
+    { title: "面向不完美信息的多智能体随机博弈模型检验", date: "2025 年 2 月 – 2026 年 4 月", url: null,
+      desc: [
+        "研究 ATL、PATL 等逻辑语言；",
+        "研究（部分可观测）MDP 与并发随机博弈的模型检验方法；",
+        "针对不完美信息下的并发随机博弈设计模型，并基于已有复杂度结果给出算法。",
+      ] },
+    { title: "Verina：可验证代码生成基准", date: "2025 年 5 月 – 2025 年 9 月",
+      url: "https://github.com/sunblaze-ucb/verina",
+      desc: [
+        "参与面向生成式 LLM 的验证基准建设，包括 Lean 示例代码与 LLM 流水线；",
+        "修复 DeepSeek Prover 自动化基准测试中的 API 与提示词问题；",
+        "分析生成输出及训练集中的相关因素。",
+      ] },
+    { title: "JavaScript 运行时高层优化", date: "2024 年 7 月 – 2024 年 9 月", url: null,
+      desc: [
+        "理解虚拟机与 JIT 编译器架构及优化 pass；",
+        "研究推测性优化、函数内联、sea-of-nodes IR 与 feedback lattice；",
+        "测试 V8 构建，比较 V8 TurboFan 与 ArkVM 的 IR 及指令选择。",
+      ] },
+    { title: "OxFolder：语义分析 Web 应用", date: "2024 年 2 月 – 2024 年 5 月", url: null,
+      desc: [
+        "通过客户会议收集需求，搭建 Flask 后端与 API；",
+        "优化 embedding 生成与相似度计算算法；",
+        "获 2024 年计算机科学系小组项目奖。",
+      ] },
+    { title: "Tracer：基于 eBPF 的线程监控", date: "2023 年 6 月 – 2023 年 9 月",
+      url: "https://github.com/yanggao04/Extended-Implementation-of-eBPF-Bootstrap",
+      desc: [
+        "学习 x86_64 数据格式、指令集与硬件实现，以及扩展 BPF；",
+        "使用 libbpf-bootstrap 开发内核态线程监控工具。",
+      ] },
+  ],
+  awards: [
+    { title: "校长奖学金", org: "佐治亚理工学院", date: "2026" },
+    { title: "Otto F. and Jenny H. Krauss Fellowship", org: "佐治亚理工学院", date: "2026" },
+    { title: "玛丽·萨默维尔奖", org: "牛津大学萨默维尔学院", date: "2026" },
+    { title: "硕士优异成绩（Distinction）", org: "牛津大学", date: "2026" },
+    { title: "本科一等学位（Part A/B）", org: "牛津大学", date: "2025" },
+    { title: "计算机科学系小组项目奖", org: "牛津大学", date: "2024" },
+    { title: "初试优异成绩（Distinction）", org: "牛津大学", date: "2023" },
+  ],
+};

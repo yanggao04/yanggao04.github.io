@@ -21,6 +21,7 @@ function render() {
   foot.textContent = `\u00A9 ${new Date().getFullYear()} ${PROFILE.name}.`;
 
   const host = document.getElementById("page");
+  if (page.reset) page.reset();
   host.innerHTML = page.render();
 
   document.title = key === "home" ? PROFILE.name : `${page.label} \u00B7 ${PROFILE.name}`;
